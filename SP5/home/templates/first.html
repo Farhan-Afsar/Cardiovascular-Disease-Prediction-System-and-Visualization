@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning Algorithms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .algorithm {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .algorithm:hover {
+            background-color: #e0e0e0;
+        }
+        .predict-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .predict-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a Machine Learning Algorithm</h1>
+
+        <div class="algorithm">
+            <h2>Random Forest</h2>
+            <form action="random">
+                <input type="submit" class="predict-button" value="Let's Predict">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>Logistic Regression</h2>
+            <form action="logistic">
+                <input type="submit" class="predict-button" value="Let's Predict">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>K-Nearest Neighbors (KNN)</h2>
+            <form action="knn">
+                <input type="submit" class="predict-button" value="Let's Predict">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>Decision Trees</h2>
+            <form action="tree">
+                <input type="submit" class="predict-button" value="Let's Predict">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>Accuracy Matrics</h2>
+            <form action="accuracy">
+                <input type="submit" class="predict-button" value="Check Accuracy">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>Data Visualization</h2>
+            <form action="visual" target="_blank">
+                <input type="submit" class="predict-button" value="Let's See">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>Additional Visualizations</h2>
+            <form action="visual2" target="_blank">
+                <input type="submit" class="predict-button" value="Let's See">
+            </form>
+        </div>
+
+        <div class="algorithm">
+            <h2>Additional Visualizations</h2>
+            <form action="visual3" target="_blank">
+                <input type="submit" class="predict-button" value="Let's See">
+            </form>
+        </div>
+        <div class="algorithm">
+            <h2>Other Visualizations</h2>
+            <form action="visual4" target="_blank">
+                <input type="submit" class="predict-button" value="Let's See">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

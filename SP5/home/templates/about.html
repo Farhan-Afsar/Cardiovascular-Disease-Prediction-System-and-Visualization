@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4caf50; /* Professional Green Color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: #4caf50; /* Professional Green Color */
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cardiovascular Disease Prediction</h1>
+    </header>
+
+    <main>
+        <section class="about-data">
+            <h2>Understanding the Dataset</h2>
+            <p>This dataset provides information on various health factors and their potential link to cardiovascular disease (CVD).</p>
+            <ul>
+                <li><strong>Problem Type:</strong> Binary Classification</li>
+                <li><strong>Goal:</strong> Predict the presence or absence of CVD based on patient data.</li>
+                <li><strong>Target Variable:</strong> Presence or Absence of Cardiovascular Disease (cardio)</li>
+                <li><strong>Features:</strong>
+                    <ul>
+                        <li>Age</li>
+                        <li>Height</li>
+                        <li>Weight</li>
+                        <li>Gender</li>
+                        <li>Systolic Blood Pressure</li>
+                        <li>Diastolic Blood Pressure</li>
+                        <li>Cholesterol (Categorical)</li>
+                        <li>Glucose (Categorical)</li>
+                        <li>Smoking (Binary)</li>
+                        <li>Alcohol Intake (Binary)</li>
+                        <li>Physical Activity (Binary)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="solutions">
+            <h2>Solution Approach</h2>
+            <ol>
+                <li><strong>Data Preprocessing:</strong> Clean and prepare data for machine learning.</li>
+                <li><strong>Model Training and Selection:</strong> Train and evaluate different models (Logistic Regression, KNN, Random Forest, Decision Tree).</li>
+                <li><strong>Model Tuning (Optional):</strong> Fine-tune the chosen model for optimal performance.</li>
+                <li><strong>Model Deployment and Evaluation:</strong> Deploy the model and monitor its performance.</li>
+            </ol>
+        </section>
+
+        <section class="algorithms">
+            <h2>Machine Learning Algorithms</h2>
+            <p>Here's an overview of suitable algorithms for this problem:</p>
+            <ul>
+                <li><strong>Logistic Regression:</strong> Linear model for probability prediction, good interpretability.</li>
+                <li><strong>K-Nearest Neighbors (KNN):</strong> Classifies based on nearest neighbors, simple but parameter-sensitive.</li>
+                <li><strong>Random Forest:</strong> Combines multiple decision trees for improved accuracy and robustness.</li>
+                <li><strong>Decision Tree:</strong> Tree-like structure for classification, easy to interpret but prone to overfitting.</li>
+            </ul>
+        </section>
+
+        <section class="evaluation">
+            <h2>Evaluating Model Performance</h2>
+            <p>We use various metrics to assess model effectiveness:</p>
+            <ul>
+                <li><strong>Accuracy:</strong> Proportion of correctly classified instances.</li>
+                <li><strong>Precision:</strong> Ratio of true positives to all predicted positives.</li>
+                <li><strong>Recall:</strong> Ratio of true positives to all actual positives.</li>
+                <li><strong>F1 Score:</strong> Combines precision and recall for balanced evaluation.</li>
+            </ul>
+        </section>
+
+        <section class="data-visualization">
+            <h2>Data Visualization Techniques</h2>
+            <p>Visualization helps explore relationships within the data:</p>
+            <ul>
+                <li><strong>Scatter Plots:</strong> Visualize relationships between two continuous features.</li>
+                <li><strong>Box Plots:</strong> Compare distributions of continuous features across categories.</li>
+                <li><strong>Bar Charts:</strong> Explore distributions of categorical features.</li>
+                <li><strong>Heatmaps:</strong> Visualize correlations between multiple features.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cardiovascular Disease Prediction Analysis- Farhan & Rashedul</p>
+    </footer>
+</body>
+</html>

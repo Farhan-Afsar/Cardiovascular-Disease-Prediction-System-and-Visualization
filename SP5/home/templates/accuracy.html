@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics Visualizations</title>
+</head>
+<body>
+    <h1>Metrics Visualizations</h1>
+
+    <div>
+        <h2>Accuracy Comparison</h2>
+        <img src="data:image/png;base64,{{ accuracy_plot }}" alt="Accuracy Comparison">
+    </div>
+
+    <div>
+        <h2>Recall Comparison</h2>
+        <img src="data:image/png;base64,{{ recall_plot }}" alt="Recall Comparison">
+    </div>
+
+    <div>
+        <h2>Precision Comparison</h2>
+        <img src="data:image/png;base64,{{ precision_plot }}" alt="Precision Comparison">
+    </div>
+
+    <div>
+        <h2>F1 Score Comparison</h2>
+        <img src="data:image/png;base64,{{ f1_score_plot }}" alt="F1 Score Comparison">
+    </div>
+</body>
+</html>

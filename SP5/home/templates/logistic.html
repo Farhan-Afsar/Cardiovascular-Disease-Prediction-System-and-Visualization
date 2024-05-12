@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular Disease Prediction</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ffd166, #06d6a0);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"],
+select,
+.radio-group {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus,
+.radio-group:focus {
+    border-color: #007BFF;
+}
+
+.radio-group input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cardiovascular Disease Prediction</h1>
+    </header>
+    
+    <main>
+        <form action="result">
+            <div class="form-group">
+                <label for="age">Age (in years):</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (in cm):</label>
+                <input type="number" name="height" id="height" required>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" name="weight" id="weight" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ap_hi">Systolic Blood Pressure:</label>
+                <input type="number" name="ap_hi" id="ap_hi" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ap_lo">Diastolic Blood Pressure:</label>
+                <input type="number" name="ap_lo" id="ap_lo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value=""></option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cholesterol">Cholesterol:</label>
+                <select name="cholesterol" id="cholesterol" required>
+                    <option value=""></option>
+                    <option value="1">Normal</option>
+                    <option value="2">Above Normal</option>
+                    <option value="3">Well Above Normal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="glucose">Glucose:</label>
+                <select name="glucose" id="glucose" required>
+                    <option value=""></option>
+                    <option value="1">Normal</option>
+                    <option value="2">Above Normal</option>
+                    <option value="3">Well Above Normal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Smoking:</label>
+                <div class="radio-group">
+                    <input type="radio" name="smoke" id="smoke_yes" value="1" required>
+                    <label for="smoke_yes">Yes</label>
+
+                    <input type="radio" name="smoke" id="smoke_no" value="0">
+                    <label for="smoke_no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Alcohol Intake:</label>
+                <div class="radio-group">
+                    <input type="radio" name="alco" id="alco_yes" value="1" required>
+                    <label for="alco_yes">Yes</label>
+
+                    <input type="radio" name="alco" id="alco_no" value="0">
+                    <label for="alco_no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Physical Activity:</label>
+                <div class="radio-group">
+                    <input type="radio" name="active" id="active_yes" value="1" required>
+                    <label for="active_yes">Yes</label>
+
+                    <input type="radio" name="active" id="active_no" value="0">
+                    <label for="active_no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+
+        <div class="result-container"> Result : {{result2}}</div>
+    </main>
+</body>
+</html>

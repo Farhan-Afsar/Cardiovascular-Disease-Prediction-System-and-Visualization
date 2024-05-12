@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations</title>
+</head>
+<body>
+    <h1>Visualizations</h1>
+    
+
+    <!-- Outcome Count -->
+    <h2>Outcome Count</h2>
+    <img src="data:image/png;base64,{{ plot_html_after }}" alt="Outcome Count">
+
+    <!-- Pairplot -->
+    <h2>Pairplot</h2>
+    <img src="data:image/png;base64,{{ plot_html_pairplot }}" alt="Pairplot">
+
+    <!-- Boxplot -->
+    <h2>Boxplot</h2>
+    <img src="data:image/png;base64,{{ plot_html_boxplot }}" alt="Boxplot">
+
+    <!-- Violinplot -->
+    <h2>Violinplot</h2>
+    <img src="data:image/png;base64,{{ plot_html_violinplot }}" alt="Violinplot">
+
+     <!-- NULL Count Analysis -->
+     <h2>NULL Count Analysis</h2>
+     <img src="data:image/png;base64,{{ plot_html_before }}" alt="NULL Count Analysis">
+
+
+</body>
+</html>

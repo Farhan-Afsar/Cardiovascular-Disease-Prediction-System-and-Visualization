@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualizations</title>
+    <style>
+        /* Add CSS styles for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        .visualization-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .visualization {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .visualization img {
+            width: 100%;
+            display: block;
+        }
+        .visualization-title {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Visualizations</h1>
+
+    <div class="visualization-container">
+       
+
+        <!-- Scatterplot for Blood Pressure -->
+        <div class="visualization">
+            <div class="visualization-title">Scatterplot of Blood Pressure</div>
+            <img src="data:image/png;base64,{{ plot_html_scatterplot_bp }}" alt="Scatterplot of Blood Pressure">
+        </div>
+
+        <!-- Boxplot for Cholesterol and Gender -->
+        <div class="visualization">
+            <div class="visualization-title">Boxplot of Cholesterol by Gender</div>
+            <img src="data:image/png;base64,{{ plot_html_boxplot_chol_gender }}" alt="Boxplot of Cholesterol by Gender">
+        </div>
+
+        <!-- Pie Chart for Gender Distribution -->
+        <div class="visualization">
+            <div class="visualization-title">Pie Chart of Gender Distribution</div>
+            <img src="data:image/png;base64,{{ plot_html_piechart_gender }}" alt="Pie Chart of Gender Distribution">
+        </div>
+
+        <!-- Bar Plot for Alcohol Intake and Smoking -->
+        <div class="visualization">
+            <div class="visualization-title">Bar Plot of Alcohol Intake and Smoking</div>
+            <img src="data:image/png;base64,{{ plot_html_barplot_alco_smoke }}" alt="Bar Plot of Alcohol Intake and Smoking">
+        </div>
+    </div>
+
+</body>
+</html>

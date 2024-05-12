@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Visualizations</title>
+</head>
+<body>
+    <h1>Extra Visualizations</h1>
+
+    <div>
+        <h2>Weight Histogram</h2>
+        <img src="data:image/png;base64,{{ plot_html_weight_histogram }}" alt="Weight Histogram">
+    </div>
+
+    <div>
+        <h2>Age Boxplot by Gender</h2>
+        <img src="data:image/png;base64,{{ plot_html_age_boxplot_gender }}" alt="Age Boxplot by Gender">
+    </div>
+
+    <div>
+        <h2>Count Plot of Glucose and Cholesterol</h2>
+        <img src="data:image/png;base64,{{ plot_html_gluc_cholesterol_countplot }}" alt="Count Plot of Glucose and Cholesterol">
+    </div>
+
+    <div>
+        <h2>Violin Plot of Systolic Blood Pressure by Gender</h2>
+        <img src="data:image/png;base64,{{ plot_html_bp_violinplot_gender }}" alt="Violin Plot of Systolic Blood Pressure by Gender">
+    </div>
+</body>
+</html>
